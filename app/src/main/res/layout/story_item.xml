@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <ImageView
+        android:id="@+id/story_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/back"
+        android:scaleType="fitXY"
+        />
+    <TextView
+        android:id="@+id/story_see"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="看:3000人数"
+        android:textSize="15sp"
+        android:textColor="@color/text_common"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"/>
+
+</RelativeLayout>

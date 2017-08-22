@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorChoosePress"
+    android:fitsSystemWindows="true">
+
+
+    <EditText
+        android:id="@+id/login_accountEdit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="电话:"
+        android:textColorHint="@color/itemBackground"
+        android:textColor="@color/text_common"
+        android:digits="1234567890"
+        android:textSize="16sp"
+        android:padding="1dp"
+        app:layout_marginTopPercent="25%h"
+        android:maxLength="11"
+        android:layout_marginLeft="15dp"
+        android:background="@null"
+        android:layout_marginRight="15dp"/>
+    <TextView
+        android:id="@+id/login_linear1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_066"
+        android:background="@color/text_common"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <EditText
+        android:id="@+id/login_passEdit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="密码:"
+        android:textColorHint="@color/itemBackground"
+        android:textColor="@color/text_common"
+        android:background="@null"
+        android:textSize="16sp"
+        android:padding="1dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+    <TextView
+        android:id="@+id/login_linear2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_066"
+        android:background="@color/text_common"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/login_clickText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:padding="3dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/shape_back"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/register_clickText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:padding="3dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_back"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/find_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="忘记密码"
+        android:textColor="@color/text_common"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        />
+
+</com.zhy.android.percent.support.PercentLinearLayout>

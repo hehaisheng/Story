@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp">
+    <ImageView
+        android:id="@+id/item_shop_image"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/meat"/>
+    <TextView
+        android:id="@+id/item_shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_shop_image"
+        android:layout_alignTop="@id/item_shop_image"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="猪脚"
+        android:textColor="@color/colorTheme"
+        android:textSize="13sp"
+        android:gravity="center_vertical"
+        />
+
+
+    <TextView
+        android:id="@+id/item_shop_sales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_shop_name"
+        android:layout_below="@+id/item_shop_name"
+        android:text="月售3334份"
+        android:padding="5dp"
+        android:textColor="@color/itemBackground"
+        android:textSize="12sp"
+        android:gravity="center_vertical"
+        />
+
+    <TextView
+        android:id="@+id/item_shop_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/item_shop_name"
+        android:layout_alignParentRight="true"
+        android:text="好好猪肉店"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/itemBackground"
+        android:textSize="13sp"
+        android:gravity="center_vertical"
+        />
+
+    <TextView
+        android:id="@+id/shop_danJia"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/item_shop_sales"
+        android:layout_below="@+id/item_shop_sales"
+        android:layout_marginBottom="5dp"
+        android:padding="2dp"
+        android:text="15/斤"
+        android:textColor="@color/colorTheme"
+        android:textSize="14sp"
+        android:gravity="center_vertical"
+        />
+
+    <Button
+        android:id="@+id/shop_buy"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/shop_danJia"
+        android:layout_alignParentRight="true"
+        android:text="买半斤"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_back"
+        android:textColor="@color/colorWhite"
+        android:textSize="13sp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/item_shop_image"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorLineItem"/>
+
+</RelativeLayout>

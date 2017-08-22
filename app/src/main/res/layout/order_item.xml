@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp"
+    android:gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="true"
+        >
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/order_shop_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(猪肉3号店)猪肉半斤，(白菜2号店）白菜一斤"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="2dp"
+                android:padding="5dp"
+                android:textColor="@color/text_common"
+                android:textSize="13sp"
+                android:gravity="center_vertical"
+                />
+            <TextView
+                android:id="@+id/order_shop_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-07-22 12:49"
+                android:layout_below="@+id/order_shop_name"
+                android:layout_alignLeft="@+id/order_shop_name"
+                android:layout_marginTop="3dp"
+                android:padding="4dp"
+                android:textColor="@color/itemBackground"
+                android:textSize="13sp"
+                android:gravity="center_vertical"/>
+
+
+            <TextView
+                android:id="@+id/order_shopping_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="应付20元"
+                android:layout_below="@+id/order_shop_name"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/order_shop_time"
+                android:padding="5dp"
+                android:textColor="@color/itemBackground"
+                android:textSize="13sp"
+                android:gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/order_shopping_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="待结账"
+                android:layout_below="@+id/order_shop_time"
+                android:layout_alignLeft="@+id/order_shop_time"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:textColor="@color/text_common"
+                android:textSize="14sp"
+                android:gravity="center_vertical"/>
+
+            <Button
+                android:id="@+id/order_pay"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_alignTop="@+id/order_shopping_send"
+                android:layout_alignParentRight="true"
+                android:text="支付"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_back"
+                android:textColor="@color/colorWhite"
+                android:textSize="13sp"
+                android:gravity="center"/>
+
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="2dp">
+
+    <ImageView
+        android:id="@+id/item_main_image"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/meat"/>
+    <TextView
+        android:id="@+id/item_main_shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_main_image"
+        android:layout_alignTop="@id/item_main_image"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="华辉肠粉(昌岗店)"
+        android:textColor="@color/text_common"
+        android:textSize="14sp"
+        android:gravity="center_vertical"
+        />
+    <TextView
+        android:id="@+id/item_main_shop_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_main_shop_name"
+        android:layout_below="@+id/item_main_shop_name"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:text="8.4分"
+        android:textColor="@color/itemBackground"
+        android:textSize="14sp"
+        android:gravity="center_vertical"
+        />
+
+    <TextView
+        android:id="@+id/item_main_shop_sales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/item_main_shop_mark"
+        android:layout_toRightOf="@+id/item_main_shop_mark"
+        android:layout_below="@+id/item_main_shop_name"
+        android:paddingLeft="20dp"
+        android:text="月售3334份"
+        android:textColor="@color/itemBackground"
+        android:textSize="12sp"
+        android:gravity="center_vertical"
+        />
+
+    <TextView
+        android:id="@+id/item_main_shop_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/item_main_shop_sales"
+        android:layout_below="@+id/item_main_shop_name"
+        android:layout_alignParentRight="true"
+        android:text="肉类"
+        android:paddingRight="20dp"
+        android:textColor="@color/itemBackground"
+        android:textSize="12sp"
+        android:gravity="center_vertical"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_066"
+        android:layout_below="@+id/item_main_image"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorLineItem"/>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/goods_all_money"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="100元"
+        android:background="@color/colorTheme"
+        android:textColor="@color/colorWhite"
+        android:padding="6dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/goods_head_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/goods_all_money"
+        android:layout_alignTop="@+id/goods_all_money"
+        android:text="肉类"
+        android:background="@color/colorTheme"
+        android:textColor="@color/colorWhite"
+        android:padding="6dp"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/goods_recycler"
+        android:layout_below="@+id/goods_head_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

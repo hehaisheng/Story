@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:hhs="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/self_header"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/selfback">
+        <com.example.pc_.story.view.custom.CustomImageView
+            android:id="@+id/self_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            hhs:src="@drawable/fruit"
+            hhs:type="circle"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/self_account_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/self_image"
+            android:text="何海生"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/self_relative_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/self_header">
+        <ImageView
+            android:id="@+id/self_address_name"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/pay"
+            />
+        <ImageView
+            android:id="@+id/self_pay_name"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/pay"
+            />
+        <TextView
+            android:id="@+id/self_address_text"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="收货地址"
+            android:layout_below="@+id/self_address_name"
+            android:layout_alignLeft="@+id/self_address_name"
+            android:textColor="@color/text_common"
+            android:layout_marginTop="3dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/self_pay_text"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="支付方式"
+            android:layout_below="@+id/self_pay_name"
+            android:layout_alignLeft="@+id/self_pay_name"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/text_common"
+            android:textSize="15sp"
+            android:gravity="center"
+            />
+
+
+
+        <TextView
+            android:id="@+id/self_cut"
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/newBack"
+            />
+    </RelativeLayout>
+
+    <TextView
+
+        android:id="@+id/self_cut_text"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/colorLineItem"
+        android:layout_below="@+id/self_relative_first"
+        android:layout_marginTop="5dp"/>
+
+
+    <ImageView
+        android:id="@+id/self_quit_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/self_cut_text"
+        android:scaleType="fitXY"
+        android:src="@drawable/friend_normal"/>
+    <TextView
+        android:id="@+id/self_quit_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/self_quit_image"
+        android:layout_alignTop="@+id/self_quit_image"
+        android:text="退出登录"
+        android:padding="5dp"
+        android:textColor="@color/text_common"
+        android:textSize="15sp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+
+        android:id="@+id/self_cut_text1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLineItem"
+        android:layout_below="@+id/self_quit_image"
+      />
+
+
+
+    <ImageView
+        android:id="@+id/self_judge_image"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/self_cut_text1"
+        android:scaleType="fitXY"
+        android:src="@drawable/gongju"/>
+
+    <TextView
+        android:id="@+id/self_judge_text"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_toRightOf="@+id/self_judge_image"
+        android:layout_alignTop="@id/self_judge_image"
+        android:text="菜品评价"
+        android:textColor="@color/text_common"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/self_cut_text2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLineItem"
+        android:layout_below="@+id/self_judge_text"
+        />
+
+    <ImageView
+        android:id="@+id/self_send_image"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:padding="7dp"
+        android:layout_below="@+id/self_cut_text2"
+        android:src="@drawable/down"/>
+
+    <TextView
+        android:id="@+id/self_send_text"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_toRightOf="@+id/self_send_image"
+        android:layout_alignTop="@id/self_send_image"
+        android:text="派送评价"
+        android:textColor="@color/text_common"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:gravity="center_vertical"/>
+
+
+    <TextView
+        android:id="@+id/self_cut_text3"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/colorLineItem"
+        android:layout_below="@+id/self_send_text"
+       />
+
+
+
+</RelativeLayout>
